@@ -21,7 +21,7 @@
     if($layout == 'splash_layout'){
         $splash_image = get_sub_field('splash_image');
         $splashText = get_sub_field('splash_text');
-        $overlayImg = get_sub_field('overlay_img');
+        $overlayImg = get_sub_field('overlayImg');
     }
 
     endwhile;
