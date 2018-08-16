@@ -165,8 +165,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 		},600);
 //ss//
-	
-
+	 
 
 
 		function setUpElements(animation){
