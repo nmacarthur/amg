@@ -222,6 +222,7 @@ p{
 
 .btn-outline-primary{
     color:$primary;
+    background:transparent !important;
     .nav-link{
     text-decoration:none;
     color:$primary;
@@ -232,6 +233,7 @@ p{
     .nav-link{
     color:$bgPrimary;
     }
+    background-color:$primary !important;
 }
 
 .btn-white{

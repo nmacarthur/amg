@@ -10675,13 +10675,16 @@ p {
 
 .btn-outline-primary,
 .wpcf7 input[type=submit] {
-  color: #c79242; }
+  color: #c79242;
+  background: transparent !important; }
   .btn-outline-primary .nav-link, .wpcf7 input[type=submit] .nav-link {
     text-decoration: none;
     color: #c79242; }
 
-.btn-outline-primary:hover .nav-link, .wpcf7 input:hover[type=submit] .nav-link {
-  color: #fff; }
+.btn-outline-primary:hover, .wpcf7 input:hover[type=submit] {
+  background-color: #c79242 !important; }
+  .btn-outline-primary:hover .nav-link, .wpcf7 input:hover[type=submit] .nav-link {
+    color: #fff; }
 
 .btn-white {
   font-weight: 400;
