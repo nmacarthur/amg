@@ -184,7 +184,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				object.style.animationDelay = (i * 200) + "ms";
 				window.setTimeout(() => {object.classList.add('animating');
 					window.setTimeout(()=>{
-						object.classList.remove(animation)},1200)
+						object.classList.remove(animation)},1200) 
 				},600); 
 			}
 		}		
