@@ -1,0 +1,64 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+@mixin breakpoint($class) {
+    @if $class == xs {
+      @media (max-width: 767px) { @content; }
+    }
+   
+    @else if $class == sm {
+      @media (min-width: 768px) { @content; }
+    }
+   
+    @else if $class == md {
+      @media (min-width: 992px) { @content; }
+    }
+   
+    @else if $class == lg {
+      @media (min-width: 1200px) { @content; }
+    }
+   
+    @else {
+      @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+  }
+
+
+$primary: #c79242; // Thats a sample how you could change a BootStrap variable.
+$secondary:#fff;
+$bgPrimary:#fff;
+$bgSecondary:#f4f4f4;
+$bgFooter: #404041;
+$textPrimary:#333333;
+$textSecondary:#666666;
+$btnPrimarytxt:#fff;
+
+//Font Weights 
+
+$headingLight:300;
+$headingRegular:400;
+$headingBold:700;
+
+$bodyRegular:400;
+$bodyBold:700;
+
+
+    //Font Sizes
+$splashText:4.375rem;
+$largeHeading:2.5rem;
+$midHeading:1.875rem;
+$subHeading:1.5rem;
+$lead:1.25rem;
+$text:1rem;
+$links:0.875rem;
+
+html {
+  font-size: 12px;
+  @media (min-width: 800px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
