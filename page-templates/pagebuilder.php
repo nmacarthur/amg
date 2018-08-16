@@ -21,13 +21,14 @@
     if($layout == 'splash_layout'){
         $splash_image = get_sub_field('splash_image');
         $splashText = get_sub_field('splash_text');
+        $overlayImg = get_sub_field('overlay_img');
     }
 
     endwhile;
     ?>
     <div class="wrapper splash" data-animation="intro-reverse" style="background-image: url('<?php echo $splash_image['url'] ?>')">
         <div class="splash__overlay"></div>
-        <div class="overlay__img"  ></div>
+        <div class="overlay__img" style="background-image:url('<?php echo $overlayImg['url']; ?>');" ></div>
         <div class="container splash__container">
             <div class="row splash__row">
                 <div class="col-md-10 offset-md-1 splash__row">
