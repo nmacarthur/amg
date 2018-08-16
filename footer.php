@@ -194,7 +194,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	function toggleModal(id){ 
 		var modal = document.getElementById(id);
 		jQuery('#'+id).modal('toggle');
-	}
+	} 
 
 
 </script> 
