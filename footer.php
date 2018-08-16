@@ -176,7 +176,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				object.classList.add(animation);
 			}
 		}
-
+ 
 		function animation(animation){
 			var elements = document.querySelectorAll('[data-animation=' + animation + ']');
 			for(i = 0; i < elements.length; i++){
