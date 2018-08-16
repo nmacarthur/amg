@@ -10660,7 +10660,8 @@ p {
 
 .logo {
   display: inline;
-  margin: 0px 8px; }
+  margin: 0px 8px;
+  max-width: 150px; }
 
 .nav-link {
   color: inherit; }
