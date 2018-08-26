@@ -230,7 +230,7 @@ p{
     background-image:none !important;
     text-shadow:none !important;
     border:none !important;
-    .button-blue{
+    &.button-blue{
         &:hover{
             border:none;
             color:$primary !important;
