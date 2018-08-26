@@ -211,12 +211,30 @@ p{
     color: inherit;
 }
 
-.btn-primary{
+.btn-primary, .ddownload-button{
     font-weight: $bodyBold;
     color:$btnPrimarytxt;
     .nav-link{
     text-decoration:none;
     color:$btnPrimarytxt;
+    }
+}
+
+.ddownload-button{
+    font-weight: $bodyRegular !important;
+    color:$primary !important;
+    background-color:$bgSecondary !important;
+    text-transform:uppercase;
+    font-size:$links !important;
+    padding:12px 16px !important;
+    background-image:none !important;
+    text-shadow:none !important;
+    border:none !important;
+    .button-blue{
+        &:hover{
+            border:none;
+            color:$primary !important;
+        }
     }
 }
 

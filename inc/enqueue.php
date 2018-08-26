@@ -15,6 +15,8 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 		wp_enqueue_style( 'understrap-styles', get_stylesheet_directory_uri() . '/css/theme.min.css', array(), $the_theme->get( 'Version' ) );
 		wp_enqueue_script( 'jquery');
 		wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), true);
+		wp_enqueue_script( 'moment', get_template_directory_uri() . '/js/moment.js', array(), true);
+		wp_enqueue_script( 'calculator-arrays', get_template_directory_uri() . '/js/calculator-arrays.js', array(), true);
 		wp_enqueue_script( 'emergence', get_template_directory_uri() . '/js/emergence.js', array(), true);
 		wp_enqueue_script( 'fontawesome', get_template_directory_uri() . '/js/fontawesome-all.min.js', array(), true);
 		wp_enqueue_script( 'understrap-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $the_theme->get( 'Version' ), true );

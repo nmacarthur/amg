@@ -749,7 +749,7 @@
                             <?php echo $text; ?>
                         </div>
                         <div class="col-md-2 offset-md-2">
-                            <a class="btn btn-secondary" href="<?php echo $link['url'] ?>">Download</a>
+                            <?php echo $link ?>
                         </div>
                     </div>
             <?php endwhile; ?>
