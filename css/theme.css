@@ -10683,7 +10683,7 @@ p {
   background-image: none !important;
   text-shadow: none !important;
   border: none !important; }
-  .ddownload-button .button-blue:hover {
+  .ddownload-button.button-blue:hover {
     border: none;
     color: #c79242 !important; }
 
