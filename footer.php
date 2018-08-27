@@ -223,7 +223,7 @@ var TPD = '';
 		  //window.location = 'https://www.webmerge.me/merge/25657/8wf8vm?_use_get=1&download=1&' + $(this).serialize();
 	  });
 	  
-	  $('form.wpcf7-form input[type=submit]').attr('disabled', 'disabled');	
+	  $('form.wpcf7-form input[type=submit] .calculator').attr('disabled', 'disabled');	
 	  
 	  $('form.wpcf7-form input, form.wpcf7-form select').change(function(){
 	  
