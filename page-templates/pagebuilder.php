@@ -12,6 +12,9 @@
 
     ?>
 
+    <?php get_template_part( 'page-templates/blocks' ); ?>
+
+
 <!--Splash-->
 <?php if( have_rows('splash') ): 
     while ( have_rows('splash') ) : the_row();

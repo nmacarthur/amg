@@ -2,8 +2,7 @@
 <?php 
     if(get_row_layout() == 'intro_blurb'):
 
-    if( get_field('intro_blurb') ): 
-        $blurbText = get_field('intro_blurb_intro_blurb');
+      $blurbText = get_sub_field('intro_blurb_text');
     ?>
     <div class="wrapper" data-animation="intro">
         <div class="container ">
@@ -18,5 +17,5 @@
     </div>
     
 <?php 
-    endif; 
+
     endif; ?>
