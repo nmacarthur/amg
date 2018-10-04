@@ -2,7 +2,7 @@
 if(get_row_layout() == '2column'):
         // 2Column
         $title = get_sub_field('2column_title');
-        $background_color = get_sub_field('2-column_background_color');
+        $background_color = get_sub_field('2column_background_color');
         ?>
     <div class="wrapper" style="background-color:<?php echo $background_color ?>;" data-animation="intro">
         <div class="container">

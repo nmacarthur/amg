@@ -29,6 +29,8 @@ if( have_rows('blocks') ) {
          get_template_part( 'page-templates/page-components/investment_table' );
          get_template_part( 'page-templates/page-components/people_columns' );
          get_template_part( 'page-templates/page-components/pds_and_forms' );
+         get_template_part( 'page-templates/page-components/testimonials' );
+         get_template_part( 'page-templates/page-components/2columns' );
 
       }
 
