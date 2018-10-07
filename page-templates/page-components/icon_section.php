@@ -20,10 +20,13 @@
             <?php while ( have_rows('icon_section_repeater') ) : the_row(); 
                 $icon_section_subtitle = get_sub_field('icon_label');
                 $icon_section_image = get_sub_field('icon'); 
+                $icon_section_link = get_sub_field('link');
             ?>
             <div class="col-md-3">
-                <div class="icon_section__image" style="background-image: url('<?php echo $icon_section_image['url'] ?>');" ></div>
-                <h4 class="icon_section__subtitle"><?php echo $icon_section_subtitle ?></h4>
+                <a href="<?php echo $icon_section_link; ?>">
+                    <div class="icon_section__image" style="background-image: url('<?php echo $icon_section_image['url'] ?>');" ></div>
+                    <h4 class="icon_section__subtitle"><?php echo $icon_section_subtitle ?></h4>
+                </a>            
             </div>
             <?php endwhile;?>
         </div>

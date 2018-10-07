@@ -737,6 +737,10 @@ p{
     padding-top:16px;
 }
 
+.service_providers__image{
+    max-width:80%;
+}
+
 //Icon Section
 
 .icon_section{
@@ -1194,4 +1198,8 @@ p{
 *[data-emergence=visible] {
     /* Visible state */
     opacity:1;
+  }
+
+  .entry-meta{
+      display:none;
   }
