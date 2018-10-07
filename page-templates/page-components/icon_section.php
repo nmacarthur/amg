@@ -23,7 +23,7 @@
                 $icon_section_link = get_sub_field('link');
             ?>
             <div class="col-md-3">
-                <a href="<?php echo $icon_section_link; ?>">
+                <a href="<?php echo $icon_section_link['url']; ?>">
                     <div class="icon_section__image" style="background-image: url('<?php echo $icon_section_image['url'] ?>');" ></div>
                     <h4 class="icon_section__subtitle"><?php echo $icon_section_subtitle ?></h4>
                 </a>            
