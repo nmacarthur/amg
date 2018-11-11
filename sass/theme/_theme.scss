@@ -78,9 +78,9 @@ p{
 }
 
 .wrapper{
-    padding:60px 0px;
+    padding:40px 0px;
     @media(max-width:768px){
-    padding:20px 0px;       
+    padding:20px 0px;
 }
 }
 .centered{
@@ -94,7 +94,7 @@ p{
 }
 
 .secondarybg{
-    background-color:rgba(199, 146, 66, 0.1);   
+    background-color:rgba(199, 146, 66, 0.1);
 }
 
 .menu__content{
@@ -145,7 +145,7 @@ p{
     padding:4px 12px;
     @include breakpoint(xs){
         margin: 2px 0px;
-    }  
+    }
     @include breakpoint(sm){
         margin: 0px 4px;
 
@@ -185,7 +185,7 @@ p{
 }
 
 .links{
-    
+
     @include breakpoint(md){
         display:inline-flex;
         margin:auto;
@@ -306,7 +306,7 @@ p{
     }
     @media(max-width: 768px){
         margin: 5px 0;
-    }    
+    }
 }
 
 .footer__link:hover{
@@ -360,13 +360,13 @@ p{
         font-size:1.875rem;
     }
     &.marker{
-        padding: 0px 16px 0px 0px; 
+        padding: 0px 16px 0px 0px;
     }
     &.phone{
-        padding: 0px 12px 0px 0px; 
+        padding: 0px 12px 0px 0px;
     }
     &.envelope{
-        padding: 0px 12px 0px 0px; 
+        padding: 0px 12px 0px 0px;
     }
     &.social{
         font-size:$lead;
@@ -374,7 +374,7 @@ p{
         @media(max-height:768px){
             font-size:1.875rem;
         }
-    }  
+    }
 }
 
 .prefooter__links{
@@ -401,7 +401,7 @@ p{
         a{
         font-size:1.4rem;
         }
-    }  
+    }
 }
 
 .prefooter__link:active{
@@ -426,7 +426,7 @@ p{
 
 .cta{
     background: linear-gradient(rgba(#000, .3), rgba(#000, .3));
-    background-position: center; 
+    background-position: center;
     background-size:cover;
 }
 
@@ -625,7 +625,7 @@ p{
 .card-body{
 
 }
- 
+
 .card__container{
     display:flex;
 
@@ -668,7 +668,7 @@ p{
 }
 
 .imgsplit__chunk{
-    padding:8px 0px; 
+    padding:8px 0px;
 }
 
 .imgsplit__title{
@@ -765,7 +765,7 @@ p{
 
 .icon_section__subtitle{
     text-align:center;
-    
+
 }
 
 //three column section
@@ -863,7 +863,7 @@ p{
     margin-left: 33.3333%;
     margin-right: 0;
     list-style: none;
-  
+
     li {
       position: relative;
       flex: 0 1 auto;
@@ -875,7 +875,7 @@ p{
       text-indent: -999px;
       background-color: transparent;
       border: 1px solid $primary;
-  
+
       // Use pseudo classes to increase the hit area by 10px on top and bottom.
       &::before {
         position: absolute;
@@ -896,12 +896,12 @@ p{
         content: "";
       }
     }
-  
+
     .active {
       background-color: $primary;
     }
   }
-  
+
   .btn-contact{
       width:100%;
       margin: 10px auto;
@@ -938,7 +938,7 @@ p{
 }
 
 .navbar-collapse {
-    
+
 @media screen and (max-width:992px){
     position: absolute;
     background-color: white;
@@ -999,7 +999,7 @@ p{
 .carousel-item{
     @media (max-width:768px){
         *{
-         text-align:center;   
+         text-align:center;
         }
     }
 }
@@ -1018,7 +1018,7 @@ p{
     right: 0;
     //transition:1200ms;
   }
-  
+
   /* Transparent Overlay */
   .loading:before {
     content: '';
@@ -1030,7 +1030,7 @@ p{
     height: 100%;
     background-color: rgba(255,255,255,1);
   }
-  
+
   /* :not(:required) hides these rules from IE9 and below */
   .loading:not(:required) {
     /* hide "loading..." text */
@@ -1040,7 +1040,7 @@ p{
     background-color: transparent;
     border: 0;
   }
-  
+
   .loading:not(:required):after {
     content: '';
     display: block;
@@ -1058,13 +1058,13 @@ p{
     border-radius: 0.5em;
     //-webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
     //box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
-  
+
     margin-left: -1em;
     margin-top: -1em;
     }
-  
+
   /* Animation */
-  
+
   @-webkit-keyframes spinner {
     0% {
       -webkit-transform: rotate(0deg);

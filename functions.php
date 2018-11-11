@@ -90,3 +90,66 @@ function wpb_custom_new_menu() {
 	);
   }
   add_action( 'init', 'wpb_custom_new_menu' );
+
+
+  if(function_exists("register_field_group"))
+  {
+	  register_field_group(array (
+		  'id' => 'acf_amg-downloads',
+		  'title' => 'AMG Downloads',
+		  'fields' => array (
+			  array (
+				  'key' => 'field_592773b3783ea',
+				  'label' => 'File Upload',
+				  'name' => 'file_upload',
+				  'type' => 'file',
+				  'save_format' => 'id',
+				  'library' => 'all',
+			  ),
+			  array (
+				  'key' => 'field_5927943ed16ec',
+				  'label' => 'Link Text',
+				  'name' => 'link_text',
+				  'type' => 'text',
+				  'default_value' => '',
+				  'placeholder' => '',
+				  'prepend' => '',
+				  'append' => '',
+				  'formatting' => 'html',
+				  'maxlength' => '',
+			  ),
+		  ),
+		  'location' => array (
+			  array (
+				  array (
+					  'param' => 'post_type',
+					  'operator' => '==',
+					  'value' => 'amg-downloads',
+					  'order_no' => 0,
+					  'group_no' => 0,
+				  ),
+			  ),
+		  ),
+		  'options' => array (
+			  'position' => 'normal',
+			  'layout' => 'no_box',
+			  'hide_on_screen' => array (
+				  0 => 'permalink',
+				  1 => 'the_content',
+				  2 => 'excerpt',
+				  3 => 'custom_fields',
+				  4 => 'discussion',
+				  5 => 'comments',
+				  6 => 'revisions',
+				  7 => 'slug',
+				  8 => 'author',
+				  9 => 'format',
+				  10 => 'featured_image',
+				  11 => 'categories',
+				  12 => 'tags',
+				  13 => 'send-trackbacks',
+			  ),
+		  ),
+		  'menu_order' => 0,
+	  ));
+  }

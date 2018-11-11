@@ -81,8 +81,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-md-3">
 				<div class="socialicons">
 					<span class="icon social"><i class="fab fa-linkedin"></i></span>
-					<span class="icon social"><i class="fab fa-facebook"></i></span>
-					<span class="icon social"><i class="fab fa-twitter"></i></span>
 				</div>
 			</div>
 		</div>
