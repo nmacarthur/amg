@@ -78,7 +78,7 @@ p{
 }
 
 .wrapper{
-    padding:40px 0px;
+    padding:30px 0px;
     @media(max-width:768px){
     padding:20px 0px;
 }
@@ -383,6 +383,9 @@ p{
     justify-content:space-between;
     padding:20px 0px;
     list-style-type:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
     @media(max-width:768px){
         flex-direction:column;
     }
@@ -433,7 +436,7 @@ p{
 .cta__header{
     font-size:$largeHeading;
     text-align:center;
-    padding: 102px 0px 36px 0px;
+    padding: 62px 0px 26px 0px;
     color:$bgPrimary;
     font-weight:$headingRegular;
 }
@@ -456,7 +459,7 @@ p{
     display:inline-flex;
     flex-direction:row;
     justify-content:center;
-    margin:12px 0px 86px 0px;
+    margin:12px 0px 46px 0px;
 }
 
 .footer__links{
@@ -580,7 +583,7 @@ p{
 //Tri_field
 
 .tri_field{
-    padding:64px 0px;
+    padding:34px 0px;
 }
 
 .tri_field_title{
@@ -599,7 +602,7 @@ p{
 .lead{
     font-size:$lead;
     line-height:32px;
-    padding-bottom:20px;
+    padding-bottom:15px;
 }
 
 .card{
@@ -654,7 +657,7 @@ p{
 
 .imgsplit{
     position:relative;
-    padding: 60px 0px;
+    padding: 30px 0px;
 }
 
 .imgsplit__img{
@@ -696,7 +699,7 @@ p{
 
 .imgsplit--right{
     position:relative;
-    padding: 120px 0px;
+    padding: 60px 0px;
     background-color:$bgSecondary;
 }
 
@@ -723,18 +726,18 @@ p{
 //Service Providers
 
 .service_providers{
-    padding: 60px 0px;
+    padding: 30px 0px;
 }
 
 .service_providers__title{
     font-size:$largeHeading;
     text-align:center;
-    padding-bottom:30px;
+    padding-bottom:20px;
 }
 
 .service_providers__subtitle{
     text-align: center;
-    padding-top:16px;
+    padding-top:12px;
 }
 
 .service_providers__image{
@@ -744,7 +747,7 @@ p{
 //Icon Section
 
 .icon_section{
-    padding:60px 0px;
+    padding:30px 0px;
 }
 
 .icon_column{
