@@ -23,8 +23,9 @@
                             $people_email = get_sub_field('email'); 
                             $people_phone = get_sub_field('phone'); 
                             $people_count += 1;
+                            $rand = substr(md5(microtime()),rand(0,26),5);
                         ?>
-                        <div class="col-md-3 person" data-toggle="modal" data-target="#<?php echo $people_count; ?>" style="cursor: pointer;">
+                        <div class="col-md-3 person" data-toggle="modal" data-target="#<?php echo $rand; echo $people_count; ?>" style="cursor: pointer;">
                             <img class="people__image" src="<?php echo $people_image['url'] ?>"/>
                             <p class="people__name"><?php echo $people_name ?></p>
                             <p class="people__role"><?php echo $people_role ?></p>
@@ -37,7 +38,7 @@
                         </div>
 
                         <!-- Modal -->
-                <div class="modal fade" id="<?php echo $people_count; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal fade" id="<?php echo $rand; echo $people_count; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal__close" data-dismiss="modal"><i class="fas fa-times"></i>
