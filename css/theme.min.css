@@ -10467,6 +10467,19 @@ p {
 .entry-meta {
   display: none; }
 
+.bg--light {
+  background-color: #f4f4f4; }
+
+.bg--dark {
+  background-color: #404041; }
+  .bg--dark * {
+    color: white !important; }
+
+.bg--primary {
+  background-color: #c79242; }
+  .bg--primary * {
+    color: white !important; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

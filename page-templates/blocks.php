@@ -7,7 +7,7 @@ if( have_rows('blocks') ) {
   while ( have_rows('blocks') ) { the_row();
 
     // Setup <section> for each content block
-    get_template_part( 'page-templates/blocks/block-setup' );
+    get_template_part( 'page-templates/page-components/block-setup' );
 
     // check if the flexible content field has rows of data
     if( have_rows('section') ) {

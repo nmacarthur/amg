@@ -1206,3 +1206,21 @@ p{
   .entry-meta{
       display:none;
   }
+
+  .bg{
+    &--light{
+    background-color:$bgSecondary;
+  }
+  &--dark{
+    background-color:$bgFooter;
+    * {
+        color:white !important;
+    }
+    }
+  &--primary{
+    background-color:$primary;
+    * {
+        color:white !important;
+    }
+  }
+}
