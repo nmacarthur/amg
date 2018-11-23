@@ -40,7 +40,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php endif; ?>
 				<div class="button__container">
 					<?php if( $cta_buttonText ): ?>
-						<button class="btn btn-secondary cta__button"><?php echo $cta_buttonText ?></button>
+						<?php if( !is_page('contact')):  ?>
+							<a href="<?php echo get_home_url(); ?>/contact" class="btn btn-secondary cta__button"><?php echo $cta_buttonText ?></a>
+						<?php endif ?>
 					<?php endif ?>
 				</div>
 			</div>
@@ -76,11 +78,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php if ( $email ): ?>
 					<p class="prefooter__text regular"><span class="icon envelope"><i class="fas fa-envelope"></i></span><?php echo $email ?></p>
 				<?php endif; ?>
-				<p class="prefooter__text emphasis padded">Sign up to our newsletter</p>
 			</div>
 			<div class="col-md-3">
 				<div class="socialicons">
-					<span class="icon social"><i class="fab fa-linkedin"></i></span>
+					<a href="https://www.linkedin.com/company/amg-super/" target="_blank" class="icon social"><i class="fab fa-linkedin"></i></a>
 				</div>
 			</div>
 		</div>
@@ -150,8 +151,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				},0);
 			},0)
 		},0);
-
-			/* $('a').click(function(event) {
+/* 
+			$('a').click(function(event) {
 			event.preventDefault();
 			var href = this.href;
 			$('.loading').css('z-index', '20');
