@@ -151,7 +151,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			},0)
 		},0);
 
-			$('a').click(function(event) {
+			/* $('a').click(function(event) {
 			event.preventDefault();
 			var href = this.href;
 			$('.loading').css('z-index', '20');
@@ -159,7 +159,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			window.setTimeout(() => {
 				window.location = href;
 			},500);
-		});
+		}); */
 	
 		},600);
 	 
