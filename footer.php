@@ -130,7 +130,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
-
+<script src="<?php echo bloginfo('template_directory'); ?>/js/calculator-arrays.js"></script>
+<script src="<?php echo bloginfo('template_directory'); ?>/js/moment.js"></script>
+<script src="<?php echo bloginfo('template_directory'); ?>/js/cycle.js"></script>
 <script>
 	jQuery(document).ready(function($){
 		setUpElements('intro');
@@ -214,12 +216,11 @@ var TPD = '';
 	  $('form.wpcf7-form').find('br').remove();
 	  
 	  $( "form.wpcf7-form" ).submit(function( event ) {
-		  console.log('yo');
-		  //window.location = 'https://www.webmerge.me/merge/21549/i3mm8c?_use_get=1&download=1&' + $(this).serialize();
+		  window.location = 'https://www.webmerge.me/merge/21549/i3mm8c?_use_get=1&download=1&' + $(this).serialize();
 	  });	
 	  
 	  $( "form.test" ).submit(function( event ) {
-		  //window.location = 'https://www.webmerge.me/merge/25657/8wf8vm?_use_get=1&download=1&' + $(this).serialize();
+		  window.location = 'https://www.webmerge.me/merge/25657/8wf8vm?_use_get=1&download=1&' + $(this).serialize();
 	  });
 	  
 	  $('form.wpcf7-form input[type=submit] .calculator').attr('disabled', 'disabled');	
